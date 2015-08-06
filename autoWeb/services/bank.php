@@ -7,7 +7,7 @@ require_once '../model/Bank.class.php';
 if(!isset($input_data->id)){
 	send_error(400, '消息格式或参数不正确');
 }
-
+#user comment
 $_user = new User();
 $_user->id = id_decode($input_data->id);
 $_user->init();
